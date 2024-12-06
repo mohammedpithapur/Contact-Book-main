@@ -76,11 +76,13 @@ WSGI_APPLICATION = 'people.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'djongo',
+        'ENGINE': 'django.db.backends.mysql',
         'NAME': 'crud',
-        'CLIENT': {
-            'host': ""
-    }}
+        'USER': 'root',
+        'PASSWORD': 'mp123',
+        'HOST':'localhost',
+        'PORT':'3306',
+    }
 }
 
 
